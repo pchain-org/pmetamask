@@ -16,8 +16,8 @@
     }
   },
   "icons": {
-    "16": "images/icon-16.png",
-    "128": "images/icon-128.png"
+    "16": "images/picon-16.png",
+    "128": "images/picon-128.png"
   },
   "applications": {
     "gecko": {
@@ -34,8 +34,8 @@
   },
   "browser_action": {
     "default_icon": {
-      "19": "images/icon-19.png",
-      "38": "images/icon-38.png"
+      "19": "images/picon-19.png",
+      "38": "images/picon-38.png"
     },
     "default_title": "MetaMask",
     "default_popup": "popup.html"
