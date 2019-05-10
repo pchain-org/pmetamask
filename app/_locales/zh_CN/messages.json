@@ -39,10 +39,10 @@
     "message": "Web3 API请求"
   },
   "reviewProviderRequest": {
-    "message": "请查看此Ethereum API请求。"
+    "message": "请查看此PCHAIN API请求。"
   },
   "providerRequestInfo": {
-    "message": "下面列出的域正在尝试请求访问Ethereum API，以便它可以与以太坊区块链进行交互。在批准Ethereum访问之前，请务必仔细检查您是否在正确的站点上。"
+    "message": "下面列出的域正在尝试请求访问PCHAIN API，以便它可以与PCHAIN区块链进行交互。在批准Pchain访问之前，请务必仔细检查您是否在正确的站点上。"
   },
   "accept": {
     "message": "接受"
@@ -78,7 +78,7 @@
     "message": "数量 + Gas"
   },
   "appDescription": {
-    "message": "以太坊浏览器插件",
+    "message": "PCHAIN浏览器插件",
     "description": "The description of the application"
   },
   "appName": {
@@ -250,7 +250,7 @@
     "message": "精确小数点"
   },
   "defaultNetwork": {
-    "message": "默认以太坊交易网络为主网。"
+    "message": "默认PCHAIN交易网络为主网。"
   },
   "denExplainer": {
     "message": "你的 DEN 是存储在 MetaMask 中的已加密密码。"
@@ -266,10 +266,10 @@
     "description": "Tells the user what coin they have selected to deposit with shapeshift"
   },
   "depositEth": {
-    "message": "存入 Eth"
+    "message": "存入 PI"
   },
   "depositEther": {
-    "message": "存入 Ether"
+    "message": "存入 PI"
   },
   "depositFiat": {
     "message": "从 Fiat 存入"
@@ -281,7 +281,7 @@
     "message": "从 ShapeShift 存入"
   },
   "depositShapeShiftExplainer": {
-    "message": "如果你拥有其他加密货币，你可以直接交易并存入 Ether 到你的 MetaMask 钱包。 不需要帐户。"
+    "message": "如果你拥有其他加密货币，你可以直接交易并存入 PI 到你的 MetaMask 钱包。 不需要帐户。"
   },
   "details": {
     "message": "详情"
@@ -290,10 +290,10 @@
     "message": "直接存入"
   },
   "directDepositEther": {
-    "message": "直接存入 Ether"
+    "message": "直接存入 PI"
   },
   "directDepositEtherExplainer": {
-    "message": "如果你已经有了一些 Ether，通过直接转入是你的新钱包获取 Ether 的最快捷方式。"
+    "message": "如果你已经有了一些 PI，通过直接转入是你的新钱包获取 PI 的最快捷方式。"
   },
   "done": {
     "message": "完成"
@@ -332,7 +332,7 @@
     "message": "密码不匹配"
   },
   "etherscanView": {
-    "message": "在 Etherscan 上查看账户"
+    "message": "在 Piscan 上查看账户"
   },
   "exchangeRate": {
     "message": "兑换比率"
@@ -401,11 +401,11 @@
     "message": "生成 交易"
   },
   "getEther": {
-    "message": "获取 Ether"
+    "message": "获取 PI"
   },
   "getEtherFromFaucet": {
-    "message": "从水管获取$1网络的 Ether",
-    "description": "Displays network name for Ether faucet"
+    "message": "从水管获取$1网络的 PI",
+    "description": "Displays network name for PI faucet"
   },
   "greaterThanMin": {
     "message": "必须要大于等于 $1。",
@@ -428,10 +428,10 @@
     "message": "隐藏代币？"
   },
   "howToDeposit": {
-    "message": "你想怎样转入 Ether？"
+    "message": "你想怎样转入 PI？"
   },
   "holdEther": {
-    "message": "它允许你保存ether和代币，并作为你使用Dapp的桥梁."
+    "message": "它允许你保存PI和代币，并作为你使用Dapp的桥梁."
   },
   "import": {
     "message": "导入",
@@ -537,13 +537,13 @@
     "message": "助记词只有小写字符"
   },
   "mainnet": {
-    "message": "以太坊主网络"
+    "message": "PCHAIN主网络"
   },
   "message": {
     "message": "消息"
   },
   "metamaskDescription": {
-    "message": "MetaMask is a secure identity vault for Ethereum."
+    "message": "MetaMask is a secure identity vault for PCHAIN."
   },
   "metamaskSeedWords": {
     "message": "MetaMask 助记词"
@@ -558,7 +558,7 @@
     "message": "至少选择一种代币."
   },
   "needEtherInWallet": {
-    "message": "使用 MetaMask 与 DAPP 交互，需要你的钱包里有 Ether。"
+    "message": "使用 MetaMask 与 DAPP 交互，需要你的钱包里有 PI。"
   },
   "needImportFile": {
     "message": "必须选择导入一个文件。",
@@ -569,7 +569,7 @@
     "description": "Password and file needed to import an account"
   },
   "negativeETH": {
-    "message": "Can not send negative amounts of ETH."
+    "message": "Can not send negative amounts of PI."
   },
   "networks": {
     "message": "网络"
@@ -734,7 +734,7 @@
     "message": "当前 RPC"
   },
   "connectingToMainnet": {
-    "message": "正在连接到以太坊主网"
+    "message": "正在连接到PCHAIN主网"
   },
   "connectingToRopsten": {
     "message": "正在连接到Ropsten测试网络"
@@ -802,19 +802,19 @@
     "message": "发送"
   },
   "sendETH": {
-    "message": "发送 ETH"
+    "message": "发送 PI"
   },
   "sendTokens": {
     "message": "发送 代币"
   },
   "onlySendToEtherAddress": {
-    "message": "只发送 ETH 给一个以太坊地址"
+    "message": "只发送 PI 给一个PCHAIN地址"
   },
   "searchTokens": {
     "message": "搜索代币"
   },
   "sendTokensAnywhere": {
-    "message": "将代币发送给拥有以太坊地址的任何人"
+    "message": "将代币发送给拥有PCHAIN地址的任何人"
   },
   "settings": {
     "message": "设置"
@@ -889,7 +889,7 @@
     "message": "至"
   },
   "toETHviaShapeShift": {
-    "message": "$1 ETH 通过 ShapeShift",
+    "message": "$1 PI 通过 ShapeShift",
     "description": "system will fill in deposit type in start of message"
   },
   "tokenAddress": {
