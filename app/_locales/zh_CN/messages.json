@@ -123,7 +123,7 @@
     "message": "Borrow With Dharma (Beta)"
   },
   "builtInCalifornia": {
-    "message": "MetaMask在加利福尼亚设计和制造。"
+    "message": "PCHAIN"
   },
   "buy": {
     "message": "购买"
@@ -537,7 +537,7 @@
     "message": "助记词只有小写字符"
   },
   "mainnet": {
-    "message": "PCHAIN主网络"
+    "message": "PCHAIN主网络-ERC20"
   },
   "message": {
     "message": "消息"

@@ -327,32 +327,32 @@ export default class AdvancedTab extends PureComponent {
   }
 
   renderShowConversionInTestnets () {
-    const { t } = this.context
-    const {
-      showFiatInTestnets,
-      setShowFiatConversionOnTestnetsPreference,
-    } = this.props
-
-    return (
-      <div className="settings-page__content-row">
-        <div className="settings-page__content-item">
-          <span>{ t('showFiatConversionInTestnets') }</span>
-          <div className="settings-page__content-description">
-            { t('showFiatConversionInTestnetsDescription') }
-          </div>
-        </div>
-        <div className="settings-page__content-item">
-          <div className="settings-page__content-item-col">
-            <ToggleButton
-              value={showFiatInTestnets}
-              onToggle={value => setShowFiatConversionOnTestnetsPreference(!value)}
-              activeLabel=""
-              inactiveLabel=""
-            />
-          </div>
-        </div>
-      </div>
-    )
+    // const { t } = this.context
+    // const {
+    //   showFiatInTestnets,
+    //   setShowFiatConversionOnTestnetsPreference,
+    // } = this.props
+    //
+    // return (
+    //   <div className="settings-page__content-row">
+    //     <div className="settings-page__content-item">
+    //       <span>{ t('showFiatConversionInTestnets') }</span>
+    //       <div className="settings-page__content-description">
+    //         { t('showFiatConversionInTestnetsDescription') }
+    //       </div>
+    //     </div>
+    //     <div className="settings-page__content-item">
+    //       <div className="settings-page__content-item-col">
+    //         <ToggleButton
+    //           value={showFiatInTestnets}
+    //           onToggle={value => setShowFiatConversionOnTestnetsPreference(!value)}
+    //           activeLabel=""
+    //           inactiveLabel=""
+    //         />
+    //       </div>
+    //     </div>
+    //   </div>
+    // )
   }
 
   renderContent () {
