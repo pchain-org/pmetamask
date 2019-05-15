@@ -195,7 +195,7 @@
     "message": "Your Browser is not supported..."
   },
   "builtInCalifornia": {
-    "message": "MetaMask is designed and built in California."
+    "message": ""
   },
   "buy": {
     "message": "Buy"
@@ -891,7 +891,7 @@
     "message": "MetaMask Seed Words"
   },
   "metamaskVersion": {
-    "message": "MetaMask Version"
+    "message": "PMetaMask Version"
   },
   "min": {
     "message": "Minimum"

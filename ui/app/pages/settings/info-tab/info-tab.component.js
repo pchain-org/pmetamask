@@ -32,7 +32,8 @@ export default class InfoTab extends PureComponent {
         </div>
         <div className="info-tab__link-item">
           <a
-            href="https://metamask.io/privacy.html"
+            // href="https://metamask.io/privacy.html"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -43,7 +44,8 @@ export default class InfoTab extends PureComponent {
         </div>
         <div className="info-tab__link-item">
           <a
-            href="https://metamask.io/terms.html"
+            // href="https://metamask.io/terms.html"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,7 +56,8 @@ export default class InfoTab extends PureComponent {
         </div>
         <div className="info-tab__link-item">
           <a
-            href="https://metamask.io/attributions.html"
+            // href="https://metamask.io/attributions.html"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -66,7 +69,8 @@ export default class InfoTab extends PureComponent {
         <hr className="info-tab__separator" />
         <div className="info-tab__link-item">
           <a
-            href="https://support.metamask.io"
+            // href="https://support.metamask.io"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -77,7 +81,8 @@ export default class InfoTab extends PureComponent {
         </div>
         <div className="info-tab__link-item">
           <a
-            href="https://metamask.io/"
+            // href="https://metamask.io/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -88,7 +93,8 @@ export default class InfoTab extends PureComponent {
         </div>
         <div className="info-tab__link-item">
           <a
-            href="mailto:help@metamask.io?subject=Feedback"
+            // href="mailto:help@metamask.io?subject=Feedback"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -34,7 +34,8 @@ export default class CurrencyDisplay extends PureComponent {
         { prefixComponent }
         <span className="currency-display-component__text">{ text }</span>
         {
-          suffix && (
+          suffix &&
+          (
             <span className="currency-display-component__suffix">
               { suffix }
             </span>
