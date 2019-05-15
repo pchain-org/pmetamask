@@ -388,7 +388,6 @@ class TransactionController extends EventEmitter {
     // add network/chain id
     console.log("txMeta:"+JSON.stringify(txMeta))
     const chainId ='child_0';
-    console.log("chainId2:"+JSON.stringify(chainId2))
     console.log("chainId:"+JSON.stringify(chainId))
     const txParams = Object.assign({}, txMeta.txParams, { chainId })
     console.log("txParams:"+JSON.stringify(txParams))
