@@ -226,27 +226,27 @@ NetworkDropdown.prototype.render = function () {
     //   ]
     // ),
 
-    h(
-      DropdownMenuItem,
-      {
-        key: 'default',
-        closeMenu: () => this.props.hideNetworkDropdown(),
-        onClick: () => this.handleClick('localhost'),
-        style: dropdownMenuItemStyle,
-      },
-      [
-        providerType === 'localhost' ? h('i.fa.fa-check') : h('.network-check__transparent', '✓'),
-        h(NetworkDropdownIcon, {
-          isSelected: providerType === 'localhost',
-          innerBorder: '1px solid #9b9b9b',
-        }),
-        h('span.network-name-item', {
-          style: {
-            color: providerType === 'localhost' ? '#ffffff' : '#9b9b9b',
-          },
-        }, this.context.t('localhost')),
-      ]
-    ),
+    // h(
+    //   DropdownMenuItem,
+    //   {
+    //     key: 'default',
+    //     closeMenu: () => this.props.hideNetworkDropdown(),
+    //     onClick: () => this.handleClick('localhost'),
+    //     style: dropdownMenuItemStyle,
+    //   },
+    //   [
+    //     providerType === 'localhost' ? h('i.fa.fa-check') : h('.network-check__transparent', '✓'),
+    //     h(NetworkDropdownIcon, {
+    //       isSelected: providerType === 'localhost',
+    //       innerBorder: '1px solid #9b9b9b',
+    //     }),
+    //     h('span.network-name-item', {
+    //       style: {
+    //         color: providerType === 'localhost' ? '#ffffff' : '#9b9b9b',
+    //       },
+    //     }, this.context.t('localhost')),
+    //   ]
+    // ),
 
     this.renderCustomOption(props.provider),
     this.renderCommonRpc(rpcListDetail, props.provider),
@@ -301,8 +301,6 @@ NetworkDropdown.prototype.getNetworkName = function () {
 
   if (providerName === 'mainnet') {
     name = this.context.t('mainnet')
-  } else if (providerName === 'localhost') {
-    name = this.context.t('localhost')
   } else {
     name = provider.nickname || this.context.t('unknownNetwork')
   }
@@ -315,7 +313,9 @@ NetworkDropdown.prototype.getNetworkName = function () {
   //   name = this.context.t('rinkeby')
   // } else if (providerName === 'goerli') {
   //   name = this.context.t('goerli')
-  // }
+  // }else if (providerName === 'localhost') {
+  //     name = this.context.t('localhost')
+  //   }
 
   return name
 }
