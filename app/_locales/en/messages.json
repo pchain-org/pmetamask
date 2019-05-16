@@ -105,7 +105,7 @@
     "message": "Add Suggested Tokens"
   },
   "addAcquiredTokens": {
-    "message": "Add the tokens you've acquired using MetaMask"
+    "message": "Add the tokens you've acquired using PMetaMask"
   },
   "agreeTermsOfService": {
     "message": "I agree to the Terms of Service"
@@ -130,7 +130,7 @@
     "description": "The description of the application"
   },
   "appName": {
-    "message": "MetaMask",
+    "message": "PMetaMask",
     "description": "The name of the application"
   },
   "approve": {
@@ -195,7 +195,7 @@
     "message": "Your Browser is not supported..."
   },
   "builtInCalifornia": {
-    "message": ""
+    "message": "PCHAIN"
   },
   "buy": {
     "message": "Buy"
@@ -210,7 +210,7 @@
     "message": "Buy PI with Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lets you use a credit card to deposit PI right in to your MetaMask account."
+    "message": "Wyre lets you use a credit card to deposit PI right in to your PMetaMask account."
   },
   "buyCoinSwitch": {
     "message": "Buy on CoinSwitch"
@@ -255,7 +255,7 @@
     "message": "Close"
   },
   "chromeRequiredForHardwareWallets": {
-    "message": "You need to use MetaMask on Google Chrome in order to connect to your Hardware Wallet."
+    "message": "You need to use PMetaMask on Google Chrome in order to connect to your Hardware Wallet."
   },
   "company": {
     "message": "Company"
@@ -433,7 +433,7 @@
     "message": "The default network for PI transactions is Main Net."
   },
   "denExplainer": {
-    "message": "Your DEN is your password-encrypted storage within MetaMask."
+    "message": "Your DEN is your password-encrypted storage within PMetaMask."
   },
   "deposit": {
     "message": "Deposit"
@@ -461,7 +461,7 @@
     "message": "Deposit with ShapeShift"
   },
   "depositShapeShiftExplainer": {
-    "message": "If you own other cryptocurrencies, you can trade and deposit PI directly into your MetaMask wallet. No Account Needed."
+    "message": "If you own other cryptocurrencies, you can trade and deposit PI directly into your PMetaMask wallet. No Account Needed."
   },
   "details": {
     "message": "Details"
@@ -521,7 +521,7 @@
     "message": "Never share the phrase with anyone."
   },
   "endOfFlowMessage5": {
-    "message": "Be careful of phishing! MetaMask will never spontaneously ask for your seed phrase."
+    "message": "Be careful of phishing! PMetaMask will never spontaneously ask for your seed phrase."
   },
   "endOfFlowMessage6": {
     "message": "If you need to back your up seed phrase again, you can find it in Settings -> Security."
@@ -530,7 +530,7 @@
     "message": "If you ever have questions or see something fishy, email support@metamask.io."
   },
   "endOfFlowMessage8": {
-    "message": "MetaMask cannot recover your seedphrase. Learn more."
+    "message": "PMetaMask cannot recover your seedphrase. Learn more."
   },
   "ensNameNotFound": {
     "message": "ENS name not found"
@@ -691,7 +691,7 @@
     "message": "Connect a hardware wallet"
   },
   "hardwareWalletsMsg": {
-    "message": "Select a hardware wallet you'd like to use with MetaMask"
+    "message": "Select a hardware wallet you'd like to use with PMetaMask"
   },
   "havingTroubleConnecting": {
     "message": "Having trouble connecting?"
@@ -732,7 +732,7 @@
     "message": "Import Account"
   },
   "importAccountMsg": {
-    "message": " Imported accounts will not be associated with your originally created MetaMask account seedphrase. Learn more about imported accounts "
+    "message": " Imported accounts will not be associated with your originally created PMetaMask account seedphrase. Learn more about imported accounts "
   },
   "importAccountSeedPhrase": {
     "message": "Import an Account with Seed Phrase"
@@ -812,7 +812,7 @@
     "description": "format for importing an account"
   },
   "keepTrackTokens": {
-    "message": "Keep track of the tokens you’ve bought with your MetaMask account."
+    "message": "Keep track of the tokens you’ve bought with your PMetaMask account."
   },
   "kovan": {
     "message": "Kovan Test Network"
@@ -888,7 +888,7 @@
     "message": "Connecting you to PCHAIN and the Decentralized Web."
   },
   "metamaskSeedWords": {
-    "message": "MetaMask Seed Words"
+    "message": "PMetaMask Seed Words"
   },
   "metamaskVersion": {
     "message": "PMetaMask Version"
@@ -915,7 +915,7 @@
     "message": "Must select at least 1 token."
   },
   "needEtherInWallet": {
-    "message": "To interact with decentralized applications using MetaMask, you’ll need PI in your wallet."
+    "message": "To interact with decentralized applications using PMetaMask, you’ll need PI in your wallet."
   },
   "needImportFile": {
     "message": "You must select a file to import.",
@@ -957,7 +957,7 @@
     "message": "New Network"
   },
   "newToMetaMask": {
-    "message": "New to MetaMask?"
+    "message": "New to PMetaMask?"
   },
   "noAlreadyHaveSeed": {
     "message": "No, I already have a seed phrase"
@@ -966,7 +966,7 @@
     "message": "Protect Your Keys!"
   },
   "protectYourKeysMessage1": {
-    "message": "Be careful with your seed phrase — there have been reports of websites that attempt to imitate MetaMask. MetaMask will never ask for your seed phrase!"
+    "message": "Be careful with your seed phrase — there have been reports of websites that attempt to imitate PMetaMask. PMetaMask will never ask for your seed phrase!"
   },
   "protectYourKeysMessage2": {
     "message": "Keep your phrase safe. If you see something fishy, or you’re uncertain about a website, email support@metamask.io"
@@ -1070,7 +1070,7 @@
     "message": "Participate in MetaMetrics"
   },
   "participateInMetaMetricsDescription": {
-    "message": "Participate in MetaMetrics to help us make MetaMask better"
+    "message": "Participate in MetaMetrics to help us make PMetaMask better"
   },
   "password": {
     "message": "Password"
@@ -1352,7 +1352,7 @@
     "message": "Select an Account"
   },
   "selectAnAccountHelp": {
-    "message": "Select the account to view in MetaMask"
+    "message": "Select the account to view in PMetaMask"
   },
   "selectAnAsset": {
     "message": "Select an Asset"
@@ -1496,19 +1496,19 @@
     "message": "Sync with mobile"
   },
   "syncWithMobileDesc": {
-    "message": "You can sync your accounts and information with your mobile device. Open the MetaMask mobile app, go to \"Settings\" and tap on \"Sync from Browser Extension\""
+    "message": "You can sync your accounts and information with your mobile device. Open the PMetaMask mobile app, go to \"Settings\" and tap on \"Sync from Browser Extension\""
   },
   "syncWithMobileDescNewUsers": {
-    "message": "If you just open the MetaMask Mobile app for the first time, just follow the steps in your phone."
+    "message": "If you just open the PMetaMask Mobile app for the first time, just follow the steps in your phone."
   },
   "syncWithMobileScanThisCode": {
-    "message": "Scan this code with your MetaMask mobile app"
+    "message": "Scan this code with your PMetaMask mobile app"
   },
   "syncWithMobileBeCareful": {
     "message": "Make sure nobody else is looking at your screen when you scan this code"
   },
   "syncWithMobileComplete": {
-    "message": "Your data has been synced succesfully. Enjoy the MetaMask mobile app!"
+    "message": "Your data has been synced succesfully. Enjoy the PMetaMask mobile app!"
   },
   "takesTooLong": {
     "message": "Taking too long?"
@@ -1554,7 +1554,7 @@
     "message": "Token Symbol"
   },
   "tokenWarning1": {
-    "message": "Keep track of the tokens you’ve bought with your MetaMask account. If you bought tokens using a different account, those tokens will not appear here."
+    "message": "Keep track of the tokens you’ve bought with your PMetaMask account. If you bought tokens using a different account, those tokens will not appear here."
   },
   "total": {
     "message": "Total"
@@ -1636,19 +1636,19 @@
     "message": "Try again"
   },
   "twelveWords": {
-    "message": "These 12 words are the only way to restore your MetaMask accounts.\nSave them somewhere safe and secret."
+    "message": "These 12 words are the only way to restore your PMetaMask accounts.\nSave them somewhere safe and secret."
   },
   "typePassword": {
-    "message": "Type your MetaMask password"
+    "message": "Type your PMetaMask password"
   },
   "uiMigrationAnnouncement": {
-    "message": "Welcome to the new MetaMask UI. If you have feedback about the UI or feature requests, please reach out to our support team or on GitHub."
+    "message": "Welcome to the new PMetaMask UI. If you have feedback about the UI or feature requests, please reach out to our support team or on GitHub."
   },
   "uiWelcome": {
     "message": "Welcome to the New UI (Beta)"
   },
   "uiWelcomeMessage": {
-    "message": "You are now using the new MetaMask UI."
+    "message": "You are now using the new PMetaMask UI."
   },
   "unapproved": {
     "message": "Unapproved"
@@ -1724,7 +1724,7 @@
     "message": "Welcome Back!"
   },
   "welcome": {
-    "message": "Welcome to MetaMask"
+    "message": "Welcome to PMetaMask"
   },
   "whatsThis": {
     "message": "What's this?"
@@ -1757,7 +1757,7 @@
     "message": "You’ll see this image everytime you need to confirm a transaction."
   },
   "yourUniqueAccountImageDescription3": {
-    "message": "MetaMask will never ask for your seed phrase!"
+    "message": "PMetaMask will never ask for your seed phrase!"
   },
   "zeroGasPriceOnSpeedUpError": {
     "message":"Zero gas price on speed up"

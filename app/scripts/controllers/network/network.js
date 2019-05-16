@@ -41,7 +41,7 @@ const defaultProviderConfig = {
 }
 
 const defaultNetworkConfig = {
-  ticker: 'PI',
+  ticker: 'ETH',
 }
 
 module.exports = class NetworkController extends EventEmitter {
@@ -130,7 +130,7 @@ module.exports = class NetworkController extends EventEmitter {
     })
   }
 
-  setRpcTarget (rpcTarget, chainId, ticker = 'PI', nickname = '') {
+  setRpcTarget (rpcTarget, chainId, ticker = 'ETH', nickname = '') {
     const providerConfig = {
       type: 'rpc',
       rpcTarget,
@@ -141,7 +141,7 @@ module.exports = class NetworkController extends EventEmitter {
     this.providerConfig = providerConfig
   }
 
-  async setProviderType (type, rpcTarget = '', ticker = 'PI', nickname = '') {
+  async setProviderType (type, rpcTarget = '', ticker = 'ETH', nickname = '') {
     assert.notEqual(type, 'rpc', `NetworkController - cannot call "setProviderType" with type 'rpc'. use "setRpcTarget"`)
     assert(INFURA_PROVIDER_TYPES.includes(type) || type === LOCALHOST, `NetworkController - Unknown rpc type "${type}"`)
     const providerConfig = { type, rpcTarget, ticker, nickname }
@@ -194,7 +194,7 @@ module.exports = class NetworkController extends EventEmitter {
     this._setNetworkClient(networkClient)
     // setup networkConfig
     var settings = {
-      ticker: 'PI',
+      ticker: 'ETH',
     }
     this.networkConfig.putState(settings)
   }
@@ -212,7 +212,7 @@ module.exports = class NetworkController extends EventEmitter {
     networks.networkList['rpc'] = {
       chainId: chainId,
       rpcUrl,
-      ticker: ticker || 'PI',
+      ticker: ticker || 'ETH',
       nickname,
     }
     // setup networkConfig
