@@ -60,23 +60,23 @@ export default class AdvancedTab extends PureComponent {
               fullWidth
               margin="dense"
             />
-            <TextField
-              type="text"
-              id="chainid"
-              placeholder={t('optionalChainId')}
-              value={chainId}
-              onChange={e => this.setState({ chainId: e.target.value })}
-              onKeyPress={e => {
-                if (e.key === 'Enter') {
-                  this.validateRpc(newRpc, chainId, ticker, nickname)
-                }
-              }}
-              style={{
-                display: this.state.showOptions ? null : 'none',
-              }}
-              fullWidth
-              margin="dense"
-            />
+            {/*<TextField*/}
+              {/*type="text"*/}
+              {/*id="chainid"*/}
+              {/*placeholder={t('optionalChainId')}*/}
+              {/*value={chainId}*/}
+              {/*onChange={e => this.setState({ chainId: e.target.value })}*/}
+              {/*onKeyPress={e => {*/}
+                {/*if (e.key === 'Enter') {*/}
+                  {/*this.validateRpc(newRpc, chainId, ticker, nickname)*/}
+                {/*}*/}
+              {/*}}*/}
+              {/*// style={{*/}
+              {/*//   display: this.state.showOptions ? null : 'none',*/}
+              {/*// }}*/}
+              {/*fullWidth*/}
+              {/*margin="dense"*/}
+            {/*/>*/}
             <TextField
               type="text"
               id="ticker"
@@ -137,6 +137,7 @@ export default class AdvancedTab extends PureComponent {
   }
 
   validateRpc (newRpc, chainId, ticker = 'ETH', nickname) {
+    const pchainId=newRpc.substr(newRpc.lastIndexOf('/')+1,newRpc.length)
     const { setRpcTarget, displayWarning } = this.props
     if (validUrl.isWebUri(newRpc)) {
       this.context.metricsEvent({
@@ -147,14 +148,14 @@ export default class AdvancedTab extends PureComponent {
         },
         customVariables: {
           networkId: newRpc,
-          chainId,
+          pchainId,
         },
       })
-      if (!!chainId && Number.isNaN(parseInt(chainId))) {
-        return displayWarning(`${this.context.t('invalidInput')} chainId`)
-      }
+      // if (!!chainId && Number.isNaN(parseInt(chainId))) {
+      //   return displayWarning(`${this.context.t('invalidInput')} chainId`)
+      // }
 
-      setRpcTarget(newRpc, chainId, ticker, nickname)
+      setRpcTarget(newRpc, pchainId, ticker, nickname)
     } else {
       this.context.metricsEvent({
         eventOpts: {
@@ -164,11 +165,10 @@ export default class AdvancedTab extends PureComponent {
         },
         customVariables: {
           networkId: newRpc,
-          chainId,
+          pchainId,
         },
       })
       const appendedRpc = `http://${newRpc}`
-
       if (validUrl.isWebUri(appendedRpc)) {
         displayWarning(this.context.t('uriErrorMsg'))
       } else {

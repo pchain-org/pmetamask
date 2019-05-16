@@ -104,18 +104,21 @@ class TransactionController extends EventEmitter {
 
     // request state update to finalize initialization
     this._updatePendingTxsAfterFirstBlock()
+    console.log("this.networkStore===="+JSON.stringify(this.networkStore.getState()))
 
   }
 
   /** @returns {number} the chainId*/
   getChainId () {
     const networkState = this.networkStore.getState()
-    const getChainId = parseInt(networkState)
-    if (Number.isNaN(getChainId)) {
-      return 0
-    } else {
-      return getChainId
-    }
+    console.log("networkState==="+JSON.stringify(networkState))
+    return networkState;
+    // const getChainId = parseInt(networkState)
+    // if (Number.isNaN(getChainId)) {
+    //   return 0
+    // } else {
+    //   return getChainId
+    // }
   }
 
 /**
@@ -386,8 +389,9 @@ class TransactionController extends EventEmitter {
     var Tx = require("pchainjs-tx");
     const txMeta = this.txStateManager.getTx(txId)
     // add network/chain id
+    console.log("chainId 配置======"+this.getChainId())
     console.log("txMeta:"+JSON.stringify(txMeta))
-    const chainId ='child_0';
+    const chainId =this.getChainId();
     console.log("chainId:"+JSON.stringify(chainId))
     const txParams = Object.assign({}, txMeta.txParams, { chainId })
     console.log("txParams:"+JSON.stringify(txParams))
