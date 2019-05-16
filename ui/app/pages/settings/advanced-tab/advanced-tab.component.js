@@ -178,30 +178,30 @@ export default class AdvancedTab extends PureComponent {
   }
 
   renderMobileSync () {
-    const { t } = this.context
-    const { history } = this.props
-//
-    return (
-      <div className="settings-page__content-row">
-        <div className="settings-page__content-item">
-          <span>{ t('syncWithMobile') }</span>
-        </div>
-        <div className="settings-page__content-item">
-          <div className="settings-page__content-item-col">
-            <Button
-              type="secondary"
-              large
-              onClick={event => {
-                event.preventDefault()
-                history.push(MOBILE_SYNC_ROUTE)
-              }}
-            >
-              { t('syncWithMobile') }
-            </Button>
-          </div>
-        </div>
-      </div>
-    )
+//     const { t } = this.context
+//     const { history } = this.props
+// //
+//     return (
+//       <div className="settings-page__content-row">
+//         <div className="settings-page__content-item">
+//           <span>{ t('syncWithMobile') }</span>
+//         </div>
+//         <div className="settings-page__content-item">
+//           <div className="settings-page__content-item-col">
+//             <Button
+//               type="secondary"
+//               large
+//               onClick={event => {
+//                 event.preventDefault()
+//                 history.push(MOBILE_SYNC_ROUTE)
+//               }}
+//             >
+//               { t('syncWithMobile') }
+//             </Button>
+//           </div>
+//         </div>
+//       </div>
+//     )
   }
 
   renderStateLogs () {
