@@ -29,7 +29,7 @@ class CurrencyController {
       currentCurrency: 'usd',
       conversionRate: 0,
       conversionDate: 'N/A',
-      nativeCurrency: 'ETH',
+      nativeCurrency: 'PI',
     }, opts.initState)
     this.store = new ObservableStore(initState)
   }

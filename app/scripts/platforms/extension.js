@@ -74,17 +74,17 @@ class ExtensionPlatform {
     })
   }
 
-  // _showConfirmedTransaction (txMeta) {
-  //
-  //   this._subscribeToNotificationClicked()
-  //
-  //   const url = explorerLink(txMeta.hash, parseInt(txMeta.metamaskNetworkId))
-  //   const nonce = parseInt(txMeta.txParams.nonce, 16)
-  //
-  //   const title = 'Confirmed transaction'
-  //   const message = `Transaction ${nonce} confirmed! View on EtherScan`
-  //   this._showNotification(title, message, url)
-  // }
+  _showConfirmedTransaction (txMeta) {
+
+    this._subscribeToNotificationClicked()
+
+    const url = explorerLink(txMeta.hash, parseInt(txMeta.metamaskNetworkId))
+    const nonce = parseInt(txMeta.txParams.nonce, 16)
+
+    const title = 'Confirmed transaction'
+    const message = `Transaction ${nonce} confirmed! View on EtherScan`
+    this._showNotification(title, message, url)
+  }
 
   _showFailedTransaction (txMeta, errorMessage) {
 
