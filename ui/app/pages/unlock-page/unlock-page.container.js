@@ -26,7 +26,7 @@ const mapDispatchToProps = dispatch => {
     tryUnlockMetamask: password => dispatch(tryUnlockMetamask(password)),
     markPasswordForgotten: () => dispatch(markPasswordForgotten()),
     forceUpdateMetamaskState: () => forceUpdateMetamaskState(dispatch),
-    showOptInModal: () => dispatch(showModal({ name: 'METAMETRICS_OPT_IN_MODAL' })),
+    // showOptInModal: () => dispatch(showModal({ name: 'METAMETRICS_OPT_IN_MODAL' })),
   }
 }
 
