@@ -263,8 +263,6 @@ NetworkDropdown.prototype.renderCommonRpc = function (rpcListDetail, provider) {
     const ticker = entry.ticker || 'PI'
     const nickname = entry.nickname || ''
     const currentRpcTarget = provider.type === 'rpc' && rpc === provider.rpcTarget
-    console.log(rpc + '=============rpc=======')
-    console.log(currentRpcTarget + '====================')
     if ((rpc === 'http://localhost:8545') || currentRpcTarget) {
       return null
     } else {
@@ -306,7 +304,6 @@ NetworkDropdown.prototype.renderCustomOption = function (provider) {
   const { rpcTarget, type, ticker, nickname } = provider
   const props = this.props
   const network = props.network
-  console.log(network + '============network========')
 
   if (type !== 'rpc') return null
 

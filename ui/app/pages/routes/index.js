@@ -259,21 +259,23 @@ class Routes extends Component {
 
     let name
 
-    if (providerName === 'mainnet') {
+    if (providerName === 'testnet') {
       name = this.context.t('connectingToMainnet')
-    } else if (providerName === 'ropsten') {
+    } else if (providerName === 'child_0') {
       name = this.context.t('connectingToRopsten')
-    } else if (providerName === 'kovan') {
-      name = this.context.t('connectingToKovan')
-    } else if (providerName === 'rinkeby') {
-      name = this.context.t('connectingToRinkeby')
     } else if (providerName === 'localhost') {
       name = this.context.t('connectingToLocalhost')
-    } else if (providerName === 'goerli') {
-      name = this.context.t('connectingToGoerli')
     } else {
       name = this.context.t('connectingTo', [providerId])
     }
+
+    // else if (providerName === 'kovan') {
+    //   name = this.context.t('connectingToKovan')
+    // } else if (providerName === 'rinkeby') {
+    //   name = this.context.t('connectingToRinkeby')
+    // } else if (providerName === 'goerli') {
+    //   name = this.context.t('connectingToGoerli')
+    // }
 
     return name
   }
@@ -284,21 +286,23 @@ class Routes extends Component {
 
     let name
 
-    if (providerName === 'mainnet') {
-      name = this.context.t('mainnet')
-    } else if (providerName === 'ropsten') {
-      name = this.context.t('ropsten')
-    } else if (providerName === 'kovan') {
-      name = this.context.t('kovan')
-    } else if (providerName === 'rinkeby') {
-      name = this.context.t('rinkeby')
+    if (providerName === 'testnet') {
+      name = this.context.t('testnet')
+    } else if (providerName === 'child_0') {
+      name = this.context.t('child_0')
     } else if (providerName === 'localhost') {
       name = this.context.t('localhost')
-    } else if (providerName === 'goerli') {
-      name = this.context.t('goerli')
     } else {
       name = this.context.t('unknownNetwork')
     }
+
+    // else if (providerName === 'kovan') {
+    //   name = this.context.t('kovan')
+    // } else if (providerName === 'rinkeby') {
+    //   name = this.context.t('rinkeby')
+    // }  else if (providerName === 'goerli') {
+    //   name = this.context.t('goerli')
+    // }
 
     return name
   }
