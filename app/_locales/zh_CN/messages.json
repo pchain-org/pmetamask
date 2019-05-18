@@ -522,7 +522,7 @@
     "message": "加载代币中..."
   },
   "localhost": {
-    "message": "Localhost 8545"
+    "message": "PCHAIN Testnet"
   },
   "login": {
     "message": "登录"
@@ -537,7 +537,7 @@
     "message": "助记词只有小写字符"
   },
   "mainnet": {
-    "message": "PCHAIN主网络-ERC20"
+    "message": "Mainnet PCHAIN Testnet "
   },
   "message": {
     "message": "消息"
@@ -727,8 +727,8 @@
   "rinkeby": {
     "message": "Rinkeby 测试网络"
   },
-  "ropsten": {
-    "message": "Ropsten 测试网络"
+  "child_0": {
+    "message": "Child 0 测试网络"
   },
   "currentRpc": {
     "message": "当前 RPC"
@@ -737,7 +737,7 @@
     "message": "正在连接到PCHAIN主网"
   },
   "connectingToRopsten": {
-    "message": "正在连接到Ropsten测试网络"
+    "message": "正在连接到Child 0测试网络"
   },
   "connectingToKovan": {
     "message": "正在连接到Kovan测试网络"
