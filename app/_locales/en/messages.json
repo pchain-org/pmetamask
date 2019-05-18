@@ -306,13 +306,13 @@
     "message": "Connecting to Main PCHAIN Network"
   },
   "connectingToRopsten": {
-    "message": "Connecting to Ropsten Test Network"
+    "message": "Connecting to Child 0 Test Network"
   },
   "connectingToRinkeby": {
     "message": "Connecting to Rinkeby Test Network"
   },
   "connectingToLocalhost": {
-    "message": "Connecting to Localhost 8545"
+    "message": "Connecting to Testnet"
   },
   "connectingToGoerli": {
     "message": "Connecting to Goerli Test Network"
@@ -858,7 +858,7 @@
     "message": "Loading Tokens..."
   },
   "localhost": {
-    "message": "Localhost 8545"
+    "message": "Mainnet PCHAIN Testnet"
   },
   "login": {
     "message": "Log In"
@@ -872,7 +872,7 @@
   "loweCaseWords": {
     "message": "seed words only have lowercase characters"
   },
-  "mainnet": {
+  "testnet": {
     "message": "Main PCHAIN Network"
   },
   "memorizePhrase": {
@@ -1232,8 +1232,8 @@
   "rinkeby": {
     "message": "Rinkeby Test Network"
   },
-  "ropsten": {
-    "message": "Ropsten Test Network"
+  "child_0": {
+    "message": "Child 0 Test Network"
   },
   "goerli": {
     "message": "Goerli Test Network"

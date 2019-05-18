@@ -33,14 +33,14 @@ function createNetworkAndChainIdMiddleware ({ network }) {
   let netId
 
   switch (network) {
-    case 'mainnet':
-      netId = '1'
+    case 'testnet':
+      netId = 'testnet'
       chainId = '0x01'
       break
-    // case 'ropsten':
-    //   netId = '3'
-    //   chainId = '0x03'
-    //   break
+    case 'child_0':
+      netId = 'child_0'
+      chainId = '0x03'
+      break
     // case 'rinkeby':
     //   netId = '4'
     //   chainId = '0x04'

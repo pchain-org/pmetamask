@@ -41,7 +41,10 @@ const defaultProviderConfig = {
 }
 
 const defaultNetworkConfig = {
-  ticker: 'ETH',
+  ticker: '' +
+  '' +
+  '' +
+  '',
 }
 
 module.exports = class NetworkController extends EventEmitter {
@@ -103,6 +106,7 @@ module.exports = class NetworkController extends EventEmitter {
       return
     }
     network = networks.networkList[type] && networks.networkList[type].chainId ? networks.networkList[type].chainId : network
+
     return this.networkStore.putState(network)
   }
 
@@ -125,6 +129,7 @@ module.exports = class NetworkController extends EventEmitter {
           return this.setNetworkState('loading')
         }
         log.info('web3.getNetwork returned ' + network)
+        console.log('web3.getNetwork returned ' + network)
         this.setNetworkState(network, type)
       }
     })
@@ -182,6 +187,7 @@ module.exports = class NetworkController extends EventEmitter {
       this._configureLocalhostProvider()
     // url-based rpc endpoints
     } else if (type === 'rpc') {
+
       this._configureStandardProvider({ rpcUrl: rpcTarget, chainId, ticker, nickname })
     } else {
       throw new Error(`NetworkController - _configureProvider - unknown type "${type}"`)
@@ -190,6 +196,7 @@ module.exports = class NetworkController extends EventEmitter {
 
   _configureInfuraProvider ({ type }) {
     log.info('NetworkController - configureInfuraProvider', type)
+    console.log('NetworkController - configureInfuraProvider', type)
     const networkClient = createInfuraClient({ network: type, platform: this.platform })
     this._setNetworkClient(networkClient)
     // setup networkConfig
