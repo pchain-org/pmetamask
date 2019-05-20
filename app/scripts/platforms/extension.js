@@ -74,17 +74,26 @@ class ExtensionPlatform {
     })
   }
 
-  // _showConfirmedTransaction (txMeta) {
-  //
-  //   this._subscribeToNotificationClicked()
-  //
-  //   const url = explorerLink(txMeta.hash, parseInt(txMeta.metamaskNetworkId))
-  //   const nonce = parseInt(txMeta.txParams.nonce, 16)
-  //
-  //   const title = 'Confirmed transaction'
-  //   const message = `Transaction ${nonce} confirmed! View on EtherScan`
-  //   this._showNotification(title, message, url)
-  // }
+  _showConfirmedTransaction (txMeta) {
+
+    this._subscribeToNotificationClicked()
+
+    console.log("txMeta>>>>>>>>>>>>>>>>>>>>>>>>>>"+JSON.stringify(txMeta))
+    var url;
+    if(txMeta.metamaskNetworkId=='pchain'){
+       url ="https://piscan.pchain.org/index.html?chainId=0&key='"+txMeta.hash+"'";
+    }else if(txMeta.metamaskNetworkId=='child_0'){
+       url ="https://piscan.pchain.org/index.html?chainId=1&key='"+txMeta.hash+"'";
+    }else{
+      url="https://piscan.pchain.org/index.html?chainId=0&key='"+txMeta.hash+"'";
+    }
+    // const url = explorerLink(txMeta.hash, parseInt(txMeta.metamaskNetworkId))
+    const nonce = parseInt(txMeta.txParams.nonce, 16)
+    const title = 'Confirmed transaction'
+    const message = `Transaction ${nonce} confirmed! View on PIscan`
+    console.log("=====title, message, url====="+title, message, url)
+    this._showNotification(title, message, url)
+  }
 
   _showFailedTransaction (txMeta, errorMessage) {
 
