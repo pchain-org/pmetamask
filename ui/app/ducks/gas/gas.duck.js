@@ -186,7 +186,7 @@ export function fetchBasicGasEstimates () {
 
     dispatch(basicGasEstimatesLoadingStarted())
 
-    const promiseToFetch = Date.now() - timeLastRetrieved > 75000
+    const promiseToFetch = Date.now() - timeLastRetrieved > 7500000
     ? fetch('https://dev.blockscale.net/api/gasexpress.json', {
       'headers': {},
       'referrer': 'https://dev.blockscale.net/api/',
@@ -216,6 +216,7 @@ export function fetchBasicGasEstimates () {
         const timeRetrieved = Date.now()
         dispatch(setBasicPriceEstimatesLastRetrieved(timeRetrieved))
         saveLocalStorageData(timeRetrieved, 'BASIC_PRICE_ESTIMATES_LAST_RETRIEVED')
+        console.log("..............>>>>>>>>"+JSON.stringify(basicEstimates))
         saveLocalStorageData(basicEstimates, 'BASIC_PRICE_ESTIMATES')
 
         return basicEstimates
@@ -243,7 +244,7 @@ export function fetchBasicGasAndTimeEstimates () {
 
     dispatch(basicGasEstimatesLoadingStarted())
 
-    const promiseToFetch = Date.now() - timeLastRetrieved > 75000
+    const promiseToFetch = Date.now() - timeLastRetrieved > 7500000
       ? fetch('https://ethgasstation.info/json/ethgasAPI.json', {
         'headers': {},
         'referrer': 'http://ethgasstation.info/json/',
@@ -291,6 +292,7 @@ export function fetchBasicGasAndTimeEstimates () {
           dispatch(setBasicApiEstimatesLastRetrieved(timeRetrieved))
           saveLocalStorageData(timeRetrieved, 'BASIC_GAS_AND_TIME_API_ESTIMATES_LAST_RETRIEVED')
           saveLocalStorageData(basicEstimates, 'BASIC_GAS_AND_TIME_API_ESTIMATES')
+          console.log("<<<<<<.....fetchBasicGasAndTimeEstimates.........>>>>>>>>"+JSON.stringify(basicEstimates))
 
           return basicEstimates
         })
