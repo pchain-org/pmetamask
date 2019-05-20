@@ -8,7 +8,7 @@ const createBlockTracker = require('./createBlockTracker')
 module.exports = createLocalhostClient
 
 function createLocalhostClient ({ platform }) {
-  const fetchMiddleware = createFetchMiddleware({ rpcUrl: 'http://54.189.122.88:6969/testnet' })
+  const fetchMiddleware = createFetchMiddleware({ rpcUrl: 'http://localhost:6969/testnet' })
   const blockProvider = providerFromMiddleware(fetchMiddleware)
   const blockTracker = createBlockTracker({ provider: blockProvider, pollingInterval: 1000 }, platform)
 

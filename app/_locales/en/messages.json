@@ -300,19 +300,19 @@
     "message": "Connecting to $1"
   },
   "connectingToKovan": {
-    "message": "Connecting to Kovan Test Network"
+    "message": "Connecting to Testnet Network"
   },
   "connectingToMainnet": {
     "message": "Connecting to Main PCHAIN Network"
   },
   "connectingToRopsten": {
-    "message": "Connecting to Child 0 Test Network"
+    "message": "Connecting to Chain Child 1 Network"
   },
   "connectingToRinkeby": {
-    "message": "Connecting to Rinkeby Test Network"
+    "message": "Connecting to Chain Child 1 Test Network"
   },
   "connectingToLocalhost": {
-    "message": "Connecting to Testnet"
+    "message": "Connecting to Localhost"
   },
   "connectingToGoerli": {
     "message": "Connecting to Goerli Test Network"
@@ -815,7 +815,7 @@
     "message": "Keep track of the tokens you’ve bought with your PMetaMask account."
   },
   "kovan": {
-    "message": "Kovan Test Network"
+    "message": "Testnet Network"
   },
   "knowledgeDataBase": {
     "message": "Visit our Knowledge Base"
@@ -872,7 +872,7 @@
   "loweCaseWords": {
     "message": "seed words only have lowercase characters"
   },
-  "testnet": {
+  "mainnet": {
     "message": "Main PCHAIN Network"
   },
   "memorizePhrase": {
@@ -1230,10 +1230,10 @@
     "message": "Ready to Connect?"
   },
   "rinkeby": {
-    "message": "Rinkeby Test Network"
+    "message": "Chain Child 1 Test Network"
   },
-  "child_0": {
-    "message": "Child 0 Test Network"
+  "ropsten": {
+    "message": "Chain Child 1 Network"
   },
   "goerli": {
     "message": "Goerli Test Network"

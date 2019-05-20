@@ -11,7 +11,7 @@ import {
 
 const networkToClassHash = {
   [MAINNET_CODE]: 'testnet',
-  [ROPSTEN_CODE]: 'ropsten',
+  [ROPSTEN_CODE]: 'child_0',
   [RINKEYBY_CODE]: 'rinkeby',
   [GOERLI_CODE]: 'goerli',
   [KOVAN_CODE]: 'kovan',
