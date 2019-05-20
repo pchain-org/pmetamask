@@ -195,7 +195,7 @@ module.exports = class NetworkController extends EventEmitter {
     this._setNetworkClient(networkClient)
     // setup networkConfig
     var settings = {
-      ticker: 'PI',
+      ticker: 'ETH',
     }
     this.networkConfig.putState(settings)
   }

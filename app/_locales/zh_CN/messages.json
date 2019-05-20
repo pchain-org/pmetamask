@@ -491,7 +491,7 @@
     "message": "Keep track of the tokens you’ve bought with your PMetaMask account."
   },
   "kovan": {
-    "message": "Kovan 测试网络"
+    "message": "Testnet 测试网络"
   },
   "knowledgeDataBase": {
     "message": "浏览我们的知识库"
@@ -537,7 +537,7 @@
     "message": "助记词只有小写字符"
   },
   "mainnet": {
-    "message": "Mainnet PCHAIN Testnet "
+    "message": "Main PCHAIN 正式网络"
   },
   "message": {
     "message": "消息"
@@ -725,10 +725,10 @@
     "message": "还原"
   },
   "rinkeby": {
-    "message": "Rinkeby 测试网络"
+    "message": "Chain Child 1 测试网络"
   },
-  "child_0": {
-    "message": "Child 0 测试网络"
+  "ropsten": {
+    "message": "Chain Child 1 正式网络"
   },
   "currentRpc": {
     "message": "当前 RPC"
@@ -737,13 +737,13 @@
     "message": "正在连接到PCHAIN主网"
   },
   "connectingToRopsten": {
-    "message": "正在连接到Child 0测试网络"
+    "message": "正在连接到PCHAIN Child 1正式网络"
   },
   "connectingToKovan": {
-    "message": "正在连接到Kovan测试网络"
+    "message": "正在连接到Testnet测试网络"
   },
   "connectingToRinkeby": {
-    "message": "正在连接到Rinkeby测试网络"
+    "message": "正在连接到Testnet Child 1测试网络"
   },
   "connectingToUnknown": {
     "message": "正在连接到未知网络"
