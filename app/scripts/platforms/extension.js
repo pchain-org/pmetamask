@@ -75,9 +75,7 @@ class ExtensionPlatform {
   }
 
   _showConfirmedTransaction (txMeta) {
-
     this._subscribeToNotificationClicked()
-
     console.log("txMeta>>>>>>>>>>>>>>>>>>>>>>>>>>"+JSON.stringify(txMeta))
     var url;
     if(txMeta.metamaskNetworkId=='pchain'){

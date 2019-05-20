@@ -41,10 +41,7 @@ const defaultProviderConfig = {
 }
 
 const defaultNetworkConfig = {
-  ticker: '' +
-  '' +
-  '' +
-  '',
+  ticker: 'PI',
 }
 
 module.exports = class NetworkController extends EventEmitter {
@@ -129,13 +126,12 @@ module.exports = class NetworkController extends EventEmitter {
           return this.setNetworkState('loading')
         }
         log.info('web3.getNetwork returned ' + network)
-        console.log('web3.getNetwork returned ' + network)
         this.setNetworkState(network, type)
       }
     })
   }
 
-  setRpcTarget (rpcTarget, chainId, ticker = 'ETH', nickname = '') {
+  setRpcTarget (rpcTarget, chainId, ticker = 'PI', nickname = '') {
     const providerConfig = {
       type: 'rpc',
       rpcTarget,
@@ -146,7 +142,7 @@ module.exports = class NetworkController extends EventEmitter {
     this.providerConfig = providerConfig
   }
 
-  async setProviderType (type, rpcTarget = '', ticker = 'ETH', nickname = '') {
+  async setProviderType (type, rpcTarget = '', ticker = 'PI', nickname = '') {
     assert.notEqual(type, 'rpc', `NetworkController - cannot call "setProviderType" with type 'rpc'. use "setRpcTarget"`)
     assert(INFURA_PROVIDER_TYPES.includes(type) || type === LOCALHOST, `NetworkController - Unknown rpc type "${type}"`)
     const providerConfig = { type, rpcTarget, ticker, nickname }
@@ -187,7 +183,6 @@ module.exports = class NetworkController extends EventEmitter {
       this._configureLocalhostProvider()
     // url-based rpc endpoints
     } else if (type === 'rpc') {
-
       this._configureStandardProvider({ rpcUrl: rpcTarget, chainId, ticker, nickname })
     } else {
       throw new Error(`NetworkController - _configureProvider - unknown type "${type}"`)
@@ -196,12 +191,11 @@ module.exports = class NetworkController extends EventEmitter {
 
   _configureInfuraProvider ({ type }) {
     log.info('NetworkController - configureInfuraProvider', type)
-    console.log('NetworkController - configureInfuraProvider', type)
     const networkClient = createInfuraClient({ network: type, platform: this.platform })
     this._setNetworkClient(networkClient)
     // setup networkConfig
     var settings = {
-      ticker: 'ETH',
+      ticker: 'PI',
     }
     this.networkConfig.putState(settings)
   }
@@ -219,7 +213,7 @@ module.exports = class NetworkController extends EventEmitter {
     networks.networkList['rpc'] = {
       chainId: chainId,
       rpcUrl,
-      ticker: ticker || 'ETH',
+      ticker: ticker || 'PI',
       nickname,
     }
     // setup networkConfig
