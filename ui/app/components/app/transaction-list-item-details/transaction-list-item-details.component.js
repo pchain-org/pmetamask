@@ -30,21 +30,21 @@ export default class TransactionListItemDetails extends PureComponent {
   }
 
   handleEtherscanClick = () => {
-    const { transactionGroup: { primaryTransaction } } = this.props
-    const { hash, metamaskNetworkId } = primaryTransaction
-
-    const prefix = prefixForNetwork(metamaskNetworkId)
-    const etherscanUrl = `https://${prefix}etherscan.io/tx/${hash}`
-
-    this.context.metricsEvent({
-      eventOpts: {
-        category: 'Navigation',
-        action: 'Activity Log',
-        name: 'Clicked "View on Etherscan"',
-      },
-    })
-
-    global.platform.openWindow({ url: etherscanUrl })
+    // const { transactionGroup: { primaryTransaction } } = this.props
+    // const { hash, metamaskNetworkId } = primaryTransaction
+    //
+    // const prefix = prefixForNetwork(metamaskNetworkId)
+    // const etherscanUrl = `https://${prefix}etherscan.io/tx/${hash}`
+    //
+    // this.context.metricsEvent({
+    //   eventOpts: {
+    //     category: 'Navigation',
+    //     action: 'Activity Log',
+    //     name: 'Clicked "View on Etherscan"',
+    //   },
+    // })
+    //
+    // global.platform.openWindow({ url: etherscanUrl })
   }
 
   handleCancel = event => {
@@ -158,15 +158,15 @@ export default class TransactionListItemDetails extends PureComponent {
                 />
               </Button>
             </Tooltip>
-            <Tooltip title={t('viewOnEtherscan')}>
-              <Button
-                type="raised"
-                onClick={this.handleEtherscanClick}
-                className="transaction-list-item-details__header-button"
-                >
-                <img src="/images/arrow-popout.svg" />
-              </Button>
-            </Tooltip>
+            {/*<Tooltip title={t('viewOnEtherscan')}>*/}
+              {/*<Button*/}
+                {/*type="raised"*/}
+                {/*onClick={this.handleEtherscanClick}*/}
+                {/*className="transaction-list-item-details__header-button"*/}
+                {/*>*/}
+                {/*<img src="/images/arrow-popout.svg" />*/}
+              {/*</Button>*/}
+            {/*</Tooltip>*/}
           </div>
         </div>
         <div className="transaction-list-item-details__body">

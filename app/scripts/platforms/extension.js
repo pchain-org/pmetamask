@@ -76,14 +76,13 @@ class ExtensionPlatform {
 
   _showConfirmedTransaction (txMeta) {
     this._subscribeToNotificationClicked()
-    console.log("txMeta>>>>>>>>>>>>>>>>>>>>>>>>>>"+JSON.stringify(txMeta))
     var url;
     if(txMeta.metamaskNetworkId=='pchain'){
-       url ="https://piscan.pchain.org/index.html?chainId=0&key='"+txMeta.hash+"'";
+       url ="https://piscan.pchain.org/index.html?chainId=0&key="+txMeta.hash;
     }else if(txMeta.metamaskNetworkId=='child_0'){
-       url ="https://piscan.pchain.org/index.html?chainId=1&key='"+txMeta.hash+"'";
+       url ="https://piscan.pchain.org/index.html?chainId=1&key="+txMeta.hash;
     }else{
-      url="https://piscan.pchain.org/index.html?chainId=0&key='"+txMeta.hash+"'";
+      url="https://piscan.pchain.org";
     }
     // const url = explorerLink(txMeta.hash, parseInt(txMeta.metamaskNetworkId))
     const nonce = parseInt(txMeta.txParams.nonce, 16)
@@ -119,9 +118,9 @@ class ExtensionPlatform {
   }
 
   _viewOnEtherScan (txId) {
-    if (txId.startsWith('http://')) {
+    // if (txId.startsWith('https://')) {
       extension.tabs.create({ url: txId })
-    }
+    // }
   }
 }
 

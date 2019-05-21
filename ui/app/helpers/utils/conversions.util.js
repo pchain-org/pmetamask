@@ -21,6 +21,7 @@ export function decimalToHex (decimal) {
 }
 
 export function getEthConversionFromWeiHex ({ value, fromCurrency = ETH, conversionRate, numberOfDecimals = 6 }) {
+  fromCurrency='ETH'
   const denominations = [fromCurrency, GWEI, WEI]
 
   let nonZeroDenomination
@@ -33,14 +34,14 @@ export function getEthConversionFromWeiHex ({ value, fromCurrency = ETH, convers
       toCurrency: fromCurrency,
       numberOfDecimals,
       toDenomination: denominations[i],
-    })
 
+
+    })
     if (convertedValue !== '0' || i === denominations.length - 1) {
       nonZeroDenomination = `${convertedValue} ${denominations[i]}`
       break
     }
   }
-
   return nonZeroDenomination
 }
 

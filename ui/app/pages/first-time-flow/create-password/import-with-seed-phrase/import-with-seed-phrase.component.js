@@ -249,15 +249,16 @@ export default class ImportWithSeedPhrase extends PureComponent {
             {termsChecked ? <i className="fa fa-check fa-2x" /> : null}
           </div>
           <span className="first-time-flow__checkbox-label">
-            I have read and agree to the <a
-              href="https://metamask.io/terms.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="first-time-flow__link-text">
-                { 'Terms of Use' }
-              </span>
-            </a>
+            I have read and agree to the
+            {/*<a*/}
+              {/*href="https://metamask.io/terms.html"*/}
+              {/*target="_blank"*/}
+              {/*rel="noopener noreferrer"*/}
+            {/*>*/}
+              {/*<span className="first-time-flow__link-text">*/}
+                {/*{ 'Terms of Use' }*/}
+              {/*</span>*/}
+            {/*</a>*/}
           </span>
         </div>
         <Button
