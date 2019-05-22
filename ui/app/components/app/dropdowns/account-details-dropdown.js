@@ -28,9 +28,9 @@ function mapDispatchToProps (dispatch) {
     showAccountDetailModal: () => {
       dispatch(actions.showModal({ name: 'ACCOUNT_DETAILS' }))
     },
-    viewOnEtherscan: (address, network) => {
-      global.platform.openWindow({ url: genAccountLink(address, network) })
-    },
+    // viewOnEtherscan: (address, network) => {
+    //   global.platform.openWindow({ url: genAccountLink(address, network) })
+    // },
     showRemoveAccountConfirmationModal: (identity) => {
       return dispatch(actions.showModal({ name: 'CONFIRM_REMOVE_ACCOUNT', identity }))
     },
@@ -55,7 +55,7 @@ AccountDetailsDropdown.prototype.render = function () {
     network,
     keyrings,
     showAccountDetailModal,
-    viewOnEtherscan,
+    // viewOnEtherscan,
     showRemoveAccountConfirmationModal } = this.props
 
   const address = selectedIdentity.address
@@ -102,22 +102,22 @@ AccountDetailsDropdown.prototype.render = function () {
       text: this.context.t('accountDetails'),
       icon: h(`img`, { src: 'images/info.svg', style: { height: '15px' } }),
     }),
-    h(Item, {
-      onClick: (e) => {
-        e.stopPropagation()
-        this.context.metricsEvent({
-          eventOpts: {
-            category: 'Navigation',
-            action: 'Account Options',
-            name: 'Clicked View on Etherscan',
-          },
-        })
-        viewOnEtherscan(address, network)
-        this.props.onClose()
-      },
-      text: this.context.t('viewOnEtherscan'),
-      icon: h(`img`, { src: 'images/open-etherscan.svg', style: { height: '15px' } }),
-    }),
+    // h(Item, {
+    //   onClick: (e) => {
+    //     e.stopPropagation()
+    //     this.context.metricsEvent({
+    //       eventOpts: {
+    //         category: 'Navigation',
+    //         action: 'Account Options',
+    //         name: 'Clicked View on Etherscan',
+    //       },
+    //     })
+    //     viewOnEtherscan(address, network)
+    //     this.props.onClose()
+    //   },
+    //   text: this.context.t('viewOnEtherscan'),
+    //   icon: h(`img`, { src: 'images/open-etherscan.svg', style: { height: '15px' } }),
+    // }),
     isRemovable ? h(Item, {
       onClick: (e) => {
         e.stopPropagation()
