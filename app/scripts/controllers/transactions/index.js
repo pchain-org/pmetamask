@@ -104,14 +104,12 @@ class TransactionController extends EventEmitter {
 
     // request state update to finalize initialization
     this._updatePendingTxsAfterFirstBlock()
-    console.log("this.networkStore===="+JSON.stringify(this.networkStore.getState()))
 
   }
 
   /** @returns {number} the chainId*/
   getChainId () {
     const networkState = this.networkStore.getState()
-    console.log("networkState==="+JSON.stringify(networkState))
     return networkState;
     // const getChainId = parseInt(networkState)
     // if (Number.isNaN(getChainId)) {
@@ -389,24 +387,15 @@ class TransactionController extends EventEmitter {
     var Tx = require("pchainjs-tx");
     const txMeta = this.txStateManager.getTx(txId)
     // add network/chain id
-    console.log("chainId 配置======"+this.getChainId())
-    console.log("txMeta:"+JSON.stringify(txMeta))
     const chainId =this.getChainId();
-    console.log("chainId:"+JSON.stringify(chainId))
     const txParams = Object.assign({}, txMeta.txParams, { chainId })
-    console.log("txParams:"+JSON.stringify(txParams))
     // sign tx
     const fromAddress = txParams.from
-    console.log("fromAddress:"+JSON.stringify(fromAddress))
     const ethTx = new Tx(txParams)
-    console.log("ethTx:"+JSON.stringify(ethTx))
-    console.log(ethTx)
     await this.signEthTx(ethTx, fromAddress)
-    console.log("signEthTx:"+JSON.stringify(this.signEthTx(ethTx, fromAddress)))
     // set state to signed
     this.txStateManager.setTxStatusSigned(txMeta.id)
     const rawTx = ethUtil.bufferToHex(ethTx.serialize())
-    console.log("rawTx:"+JSON.stringify(rawTx))
     return rawTx
   }
 
