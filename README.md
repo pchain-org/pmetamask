@@ -1,12 +1,4 @@
-# MetaMask Browser Extension
-
-You can find the latest version of MetaMask on [our official website](https://metamask.io/). For help using MetaMask, visit our [User Support Site](https://metamask.zendesk.com/hc/en-us).
-
-For up to the minute news, follow our [Twitter](https://twitter.com/metamask_io) or [Medium](https://medium.com/metamask) pages.
-
-To learn how to develop MetaMask-compatible applications, visit our [Developer Docs](https://metamask.github.io/metamask-docs/).
-
-To learn how to contribute to the MetaMask project itself, visit our [Internal Docs](https://github.com/MetaMask/metamask-extension/tree/develop/docs).
+# PMetaMask Browser Extension
 
 ## Building locally
 
@@ -23,11 +15,6 @@ To learn how to contribute to the MetaMask project itself, visit our [Internal D
 
  Uncompressed builds can be found in `/dist`, compressed builds can be found in `/builds` once they're built.
 
-## Contributing
-
-You can read [our internal docs here](https://metamask.github.io/metamask-extension/).
-
-You can re-generate the docs locally by running `npm run doc`, and contributors can update the hosted docs by running `npm run publish-docs`.
 
 ### Running Tests
 
