@@ -7,8 +7,8 @@ export const SECONDARY = 'SECONDARY'
 
 export const NETWORK_TYPES = {
   KOVAN: 'kovan',
-  MAINNET: 'testnet',
+  MAINNET: 'mainnet',
   RINKEBY: 'rinkeby',
-  ROPSTEN: 'child_0',
+  ROPSTEN: 'ropsten',
   GOERLI: 'goerli',
 }

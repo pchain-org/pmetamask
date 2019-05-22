@@ -10,8 +10,8 @@ import {
 } from '../../../../../app/scripts/controllers/network/enums'
 
 const networkToClassHash = {
-  [MAINNET_CODE]: 'testnet',
-  [ROPSTEN_CODE]: 'child_0',
+  [MAINNET_CODE]: 'mainnet',
+  [ROPSTEN_CODE]: 'ropsten',
   [RINKEYBY_CODE]: 'rinkeby',
   [GOERLI_CODE]: 'goerli',
   [KOVAN_CODE]: 'kovan',

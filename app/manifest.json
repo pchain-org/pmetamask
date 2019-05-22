@@ -37,7 +37,7 @@
       "19": "images/picon-19.png",
       "38": "images/picon-38.png"
     },
-    "default_title": "MetaMask",
+    "default_title": "PMetaMask",
     "default_popup": "popup.html"
   },
   "content_scripts": [
