@@ -1,4 +1,4 @@
-# PMetaMask Browser Extension
+# Pmetamask Browser Extension
 
 ## Building locally
 
