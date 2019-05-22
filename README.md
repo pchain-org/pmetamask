@@ -26,9 +26,6 @@ You can also test with a continuously watching process, via `npm run watch`.
 
 You can run the linter by itself with `gulp lint`.
 
-## Architecture
-
-[![Architecture Diagram](./docs/architecture.png)][1]
 
 ## Development
 
