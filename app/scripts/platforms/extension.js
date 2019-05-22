@@ -88,7 +88,6 @@ class ExtensionPlatform {
     const nonce = parseInt(txMeta.txParams.nonce, 16)
     const title = 'Confirmed transaction'
     const message = `Transaction ${nonce} confirmed! View on PIscan`
-    console.log("=====title, message, url====="+title, message, url)
     this._showNotification(title, message, url)
   }
 
