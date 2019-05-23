@@ -75,16 +75,8 @@ class ExtensionPlatform {
   }
 
   _showConfirmedTransaction (txMeta) {
-    this._subscribeToNotificationClicked()
-    var url;
-    if(txMeta.metamaskNetworkId=='pchain'){
-       url ="https://piscan.pchain.org/index.html?chainId=0&key="+txMeta.hash;
-    }else if(txMeta.metamaskNetworkId=='child_0'){
-       url ="https://piscan.pchain.org/index.html?chainId=1&key="+txMeta.hash;
-    }else{
-      url="https://piscan.pchain.org";
-    }
-    // const url = explorerLink(txMeta.hash, parseInt(txMeta.metamaskNetworkId))
+    // this._subscribeToNotificationClicked()
+    const url = explorerLink(txMeta.hash, parseInt(txMeta.metamaskNetworkId))
     const nonce = parseInt(txMeta.txParams.nonce, 16)
     const title = 'Confirmed transaction'
     const message = `Transaction ${nonce} confirmed! View on PIscan`
@@ -110,17 +102,17 @@ class ExtensionPlatform {
       })
   }
 
-  _subscribeToNotificationClicked () {
-    if (!extension.notifications.onClicked.hasListener(this._viewOnEtherScan)) {
-      extension.notifications.onClicked.addListener(this._viewOnEtherScan)
-    }
-  }
+  // _subscribeToNotificationClicked () {
+  //   if (!extension.notifications.onClicked.hasListener(this._viewOnEtherScan)) {
+  //     extension.notifications.onClicked.addListener(this._viewOnEtherScan)
+  //   }
+  // }
 
-  _viewOnEtherScan (txId) {
-    // if (txId.startsWith('https://')) {
-      extension.tabs.create({ url: txId })
-    // }
-  }
+  // _viewOnEtherScan (txId) {
+  //   // if (txId.startsWith('https://')) {
+  //     extension.tabs.create({ url: txId })
+  //   // }
+  // }
 }
 
 module.exports = ExtensionPlatform
